@@ -12,6 +12,9 @@ height = 500
 window = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Snake Game')
 
+# Set up the game loop:
+# Create a game loop that updates the game state and renders the game on the screen.
+
 # Set up the game loop
 running = True
 while running:
