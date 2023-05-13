@@ -1,4 +1,4 @@
-
+# Use Pip install pygame
 import pygame
 import time
 import random
