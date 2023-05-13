@@ -85,3 +85,4 @@ if len(snake) > 1:
         snake[i].y = snake[i-1].y
 
 
+# Add score: Keep track of the player's score as they eat more food.
