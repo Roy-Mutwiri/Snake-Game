@@ -52,3 +52,4 @@ if keys[pygame.K_DOWN]:
 for rect in snake:
     pygame.draw.rect(window, (255, 255, 255), rect)
 
+# Add food: Add food to the game that the snake can eat.
