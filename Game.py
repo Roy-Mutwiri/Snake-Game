@@ -78,3 +78,8 @@ if snake[0].left < 0 or snake[0].right > width or snake[0].top < 0 or snake[0].b
 
 # Increase difficulty: Increase the difficulty of the game as the snake grows longer.
 
+# Increase difficulty
+if len(snake) > 1:
+    for i in range(len(snake)-1, 0, -1):
+        snake[i].x = snake[i-1].x
+        snake[i].y = snake[i-1].y
