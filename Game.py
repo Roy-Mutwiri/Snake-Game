@@ -31,8 +31,8 @@ def Your_score(score):
     dis.blit(value, [0, 0])
 
 
-def our_snake(snake_block, snake_list):
-    for x in snake_list:
+def our_snake(snake_block, snake_List):
+    for x in snake_List:
         pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
 
 
@@ -53,6 +53,8 @@ def gameLoop():
 
     snake_List = []
     Length_of_snake = 1
+    snake_Head = [x1, y1]
+    snake_List.append(snake_Head)
 
     foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
     foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
