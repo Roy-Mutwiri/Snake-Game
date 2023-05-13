@@ -83,3 +83,5 @@ if len(snake) > 1:
     for i in range(len(snake)-1, 0, -1):
         snake[i].x = snake[i-1].x
         snake[i].y = snake[i-1].y
+
+
