@@ -33,3 +33,4 @@ while running:
 snake_size = 10
 snake = [pygame.Rect(width/2, height/2, snake_size, snake_size)]
 
+# Move the snake: Move the snake in response to user input or a timer.
