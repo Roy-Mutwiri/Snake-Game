@@ -46,3 +46,9 @@ if keys[pygame.K_UP]:
 if keys[pygame.K_DOWN]:
     snake[0].y += snake_size
 
+# Draw the snake: Draw the snake on the screen.
+
+# Draw the snake
+for rect in snake:
+    pygame.draw.rect(window, (255, 255, 255), rect)
+
