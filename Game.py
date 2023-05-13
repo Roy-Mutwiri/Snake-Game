@@ -75,3 +75,6 @@ if snake[0].colliderect(food):
 
 if snake[0].left < 0 or snake[0].right > width or snake[0].top < 0 or snake[0].bottom > height:
     running = False
+
+# Increase difficulty: Increase the difficulty of the game as the snake grows longer.
+
