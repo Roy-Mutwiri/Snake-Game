@@ -34,3 +34,15 @@ snake_size = 10
 snake = [pygame.Rect(width/2, height/2, snake_size, snake_size)]
 
 # Move the snake: Move the snake in response to user input or a timer.
+
+# Move the snake
+keys = pygame.key.get_pressed()
+if keys[pygame.K_LEFT]:
+    snake[0].x -= snake_size
+if keys[pygame.K_RIGHT]:
+    snake[0].x += snake_size
+if keys[pygame.K_UP]:
+    snake[0].y -= snake_size
+if keys[pygame.K_DOWN]:
+    snake[0].y += snake_size
+
