@@ -28,3 +28,8 @@ while running:
     pygame.display.update()
 
 # Create the snake: Create a list of rectangles that represent the snake's body.
+
+# Create the snake
+snake_size = 10
+snake = [pygame.Rect(width/2, height/2, snake_size, snake_size)]
+
