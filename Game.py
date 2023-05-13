@@ -86,3 +86,8 @@ if len(snake) > 1:
 
 
 # Add score: Keep track of the player's score as they eat more food.
+
+# Add score
+score = len(snake) - 1
+score_font = pygame.font.SysFont('Arial', 20)
+score_text = score_font.render('Score: ' + str(score), True, (255,
