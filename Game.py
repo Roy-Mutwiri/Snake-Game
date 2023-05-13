@@ -26,3 +26,5 @@ while running:
 
     # Render game
     pygame.display.update()
+
+
