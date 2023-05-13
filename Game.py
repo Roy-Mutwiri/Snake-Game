@@ -3,7 +3,7 @@
 # Set up the game window: Create a Pygame window with the desired size and caption.
 
 import pygame
-
+import random
 pygame.init()
 
 # Set up the window
@@ -53,3 +53,12 @@ for rect in snake:
     pygame.draw.rect(window, (255, 255, 255), rect)
 
 # Add food: Add food to the game that the snake can eat.
+
+# Add food
+food_size = 10
+food = pygame.Rect(0, 0, food_size, food_size)
+food.x = random.randint(0, width - food_size)
+food.y = random.randint(0, height - food_size)
+
+# Draw food
+pygame.draw.rect(window, (255, 0, 0), food)
