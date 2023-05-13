@@ -62,3 +62,16 @@ food.y = random.randint(0, height - food_size)
 
 # Draw food
 pygame.draw.rect(window, (255, 0, 0), food)
+
+
+# Detect collisions:
+# Detect when the snake collides with the food or the edge of the screen.
+
+# Detect collisions
+if snake[0].colliderect(food):
+    food.x = random.randint(0, width - food_size)
+    food.y = random.randint(0, height - food_size)
+    snake.append(pygame.Rect(0, 0, snake_size, snake_size))
+
+if snake[0].left < 0 or snake[0].right > width or snake[0].top < 0 or snake[0].bottom > height:
+    running = False
