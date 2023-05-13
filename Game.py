@@ -27,4 +27,4 @@ while running:
     # Render game
     pygame.display.update()
 
-
+# Create the snake: Create a list of rectangles that represent the snake's body.
